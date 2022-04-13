@@ -3,3 +3,5 @@ In this web-based, single player game, the user is given the responsibility of a
 
 ## Goal:
 Users will be presented with a profile of all possible suspects and any evidence that may be held against them. The profile will consist of their image, their connection to the crime, prior offenses (if any), and their alibies. It is up to the player to use any information they’ve attained throughout the investigation to find the actual suspect. 
+
+Summary pdf added. 
