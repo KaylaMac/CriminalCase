@@ -18,10 +18,6 @@ public class ButtonFunctions : MonoBehaviour
         
     }
 
-	public void Play(){
-		SceneManager.LoadScene("Briefing");
-	}
-
 	public void Living_Room(){
 		SceneManager.LoadScene("Living");
 	}
