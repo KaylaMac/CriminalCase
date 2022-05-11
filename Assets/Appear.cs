@@ -22,6 +22,7 @@ public class Appear : MonoBehaviour
 	[SerializeField] GameObject labAmmo;
 	[SerializeField] GameObject labShells;
 
+    // Start is called before the first frame update
     void Start(){
     	
 	isLabGun = PersistentData.Instance.GetLabGun();
@@ -38,12 +39,12 @@ public class Appear : MonoBehaviour
 
 	isLabLois = PersistentData.Instance.GetLabRed();
 	labLois.SetActive(isLabLois);
+	
+	isLabKnife = PersistentData.Instance.GetLabKnife();
+	labKnife.SetActive(isLabKnife);
 
 	isLabAmmo = PersistentData.Instance.GetLabAmmo();
 	labAmmo.SetActive(isLabAmmo);
-
-	isLabKnife = PersistentData.Instance.GetLabKnife();
-	labKnife.SetActive(isLabKnife);
 
 	areShells = PersistentData.Instance.GetLabShells();
 	labShells.SetActive(areShells);
