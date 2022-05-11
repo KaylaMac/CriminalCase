@@ -7,11 +7,14 @@ using UnityEngine.UI;
 public class ButtonFunctions : MonoBehaviour
 {
 
+
+	GameObject gunPanel;
 	[SerializeField] InputField inputName;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gunPanel = GameObject.Find("GunPanel");
+	gunPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -65,5 +68,13 @@ public class ButtonFunctions : MonoBehaviour
 	public void CloseHairFacts(){
 		GameObject hairFacts = GameObject.Find("HairFacts");
 		hairFacts.SetActive(false);
+	}
+
+	public void OpenGunPanel(){
+		gunPanel.SetActive(true); 
+	}
+
+	public void PrintsExamine(){
+		SceneManager.LoadScene("FingerPrintExamination");
 	}
 }
