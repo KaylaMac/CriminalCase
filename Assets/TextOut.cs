@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class TextOut : MonoBehaviour
 {
 
-	public Text display;
+	[SerializeField] Text welcome;
+	string playerName;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerName = PersistentData.Instance.GetName();
+	welcome.text = "Welcome, Detective " + playerName;
     }
 
     // Update is called once per frame
@@ -18,9 +21,4 @@ public class TextOut : MonoBehaviour
     {
         
     }
-
-	private void Awake()
-    {
-		display.text = "Welcome, Detective " + TextInput.instance.playerName;
-	}
 }
