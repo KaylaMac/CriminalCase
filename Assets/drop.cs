@@ -23,7 +23,7 @@ public class drop : MonoBehaviour
 
 	public void Check(){
 		value = dropd.value;
-		if(value == 1)
+		if(value == 2)
 			SceneManager.LoadScene("MainMenu");
 	}
 }

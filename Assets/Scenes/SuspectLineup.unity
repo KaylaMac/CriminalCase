@@ -2106,7 +2106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yes, hair was found
+  m_Text: 'Shoe size matches '
 --- !u!222 &539677477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4773,11 +4773,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Yes, hair was found
-      m_Image: {fileID: 0}
     - m_Text: 'Shoe size matches '
       m_Image: {fileID: 0}
     - m_Text: Prior offenses
+      m_Image: {fileID: 0}
+    - m_Text: Yes, hair was found
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7170,6 +7170,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Yes, hair was found
       m_Image: {fileID: 0}
+    - m_Text: Fingerprints on gun
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -8726,6 +8728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf7030b40e96864d9e7c73281234682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputName: {fileID: 0}
 --- !u!114 &1967550588
 MonoBehaviour:
   m_ObjectHideFlags: 0
