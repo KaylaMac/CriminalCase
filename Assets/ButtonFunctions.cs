@@ -73,6 +73,13 @@ public class ButtonFunctions : MonoBehaviour
 	public void OpenGunPanel(){
 		gunPanel.SetActive(true); 
 	}
+	
+	
+	public void CloseGun(){ //FactsAboutIsoder
+		GameObject FactsAboutIsoder = GameObject.Find("FactsAboutIsoder");
+		FactsAboutIsoder.SetActive(false);
+	}
+	
 
 	public void PrintsExamine(){
 		SceneManager.LoadScene("FingerPrintExamination");
