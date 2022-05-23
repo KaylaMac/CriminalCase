@@ -8,13 +8,15 @@ public class ButtonFunctions : MonoBehaviour
 {
 
 
-	GameObject gunPanel;
+	GameObject gunPanel, scratchPanel;
 	[SerializeField] InputField inputName;
     // Start is called before the first frame update
     void Start()
     {
-        gunPanel = GameObject.Find("GunPanel");
+    gunPanel = GameObject.Find("GunPanel");
 	gunPanel.SetActive(false);
+	scratchPanel = GameObject.Find("ScratchPanel");
+	scratchPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -118,7 +120,20 @@ public class ButtonFunctions : MonoBehaviour
 		ResultsPanel.SetActive(false);
 	}
 
+	public void CloseGunPanel(){
+		gunPanel.SetActive(false);
+	}
+	
+	public void CloseScratchPanel(){
+		scratchPanel.SetActive(false);
+	}
+
 	public void OpenGunPanel(){
 		gunPanel.SetActive(true); 
 	}
+
+	public void OpenScratchPanel(){
+		scratchPanel.SetActive(true); 
+	}
+	
 }
