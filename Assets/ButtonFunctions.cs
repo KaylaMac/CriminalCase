@@ -88,9 +88,14 @@ public class ButtonFunctions : MonoBehaviour
 		FactsAboutIsider.SetActive(false);
 	}
 
-	public void CloseAmmopackFacts(){
+	public void CloseAmmopackFacts(){ //AmmoPack
 		GameObject AltasVampireFact = GameObject.Find("AltasVampireFact");
 		AltasVampireFact.SetActive(false);
+	}
+
+	public void CloseB2Fact(){ //bullet2
+		GameObject GhostSniperFact = GameObject.Find("GhostSniperFact");
+		GhostSniperFact.SetActive(false);
 	}
 
 	public void CloseResults(){ 
