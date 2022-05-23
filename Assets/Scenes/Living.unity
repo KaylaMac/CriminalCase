@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.1, y: 0.000015258789}
-  m_SizeDelta: {x: 1227.8306, y: 311.1959}
+  m_AnchoredPosition: {x: -10, y: -4}
+  m_SizeDelta: {x: 1220, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26636192
 MonoBehaviour:
@@ -193,15 +193,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDid you know?\nIn 1929, a man named Isidor
-    Fink returned home to his New York apartment. Moments later, screaming was heard
-    coming from inside. However, the doors were locked from the inside, and the windows
-    were nailed shut. After prying the boards off of the windows, the police actually
-    needed to send a small child to unlock the front door, because the window was
-    too small for an adult. When the police went inside, they saw that Isidor was
-    dead, with three bullet holes in his chest. They could not find a gun. Nothing
-    was stolen. There were no fingerprints, and there should not have been a way
-    for a murderer to escape the apartment."
+  m_Text: 'When a person fires a gun, gun powder residue is left on their hand and
+    in order to test for the presence of residue, a sample must be taken from the
+    suspect''s hands. Detectives swab the hands of suspects and this swab is later
+    tested in the lab. If analysts find traces of the elements Barium, Lead, and
+    Antimony in the sample, then they may conclude that the suspect was the one who
+    fired the gun. '
 --- !u!222 &26636193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -222,7 +219,7 @@ GameObject:
   - component: {fileID: 130934134}
   - component: {fileID: 130934133}
   m_Layer: 5
-  m_Name: FactsAboutIsoder
+  m_Name: GSR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,13 +238,14 @@ RectTransform:
   m_Children:
   - {fileID: 26636191}
   - {fileID: 2098276255}
+  - {fileID: 580972091}
   m_Father: {fileID: 1435485001}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17, y: -66.319}
-  m_SizeDelta: {x: -91.9307, y: -313.9706}
+  m_AnchoredPosition: {x: 17.5, y: 19.5}
+  m_SizeDelta: {x: -95, y: -449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130934133
 MonoBehaviour:
@@ -262,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -922,6 +920,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &580972090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 580972091}
+  - component: {fileID: 580972093}
+  - component: {fileID: 580972092}
+  m_Layer: 5
+  m_Name: GSRImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &580972091
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580972090}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 130934132}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 458, y: -100}
+  m_SizeDelta: {x: 200, y: 94}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &580972092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580972090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a4487cbb8eaf19d4ba88785ac7d0a333, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &580972093
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580972090}
+  m_CullTransparentMesh: 1
 --- !u!1 &613865577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 634, y: 267}
+  m_AnchoredPosition: {x: 425, y: 154}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727701174
@@ -2118,7 +2191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 635, y: 45}
+  m_AnchoredPosition: {x: 426, y: 30}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215797698
@@ -3128,7 +3201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560.24, y: 373}
+  m_AnchoredPosition: {x: 560.24, y: 317}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599728546
@@ -3595,8 +3668,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 299.6361, y: -258.17}
-  m_SizeDelta: {x: -389.7529, y: -881.3}
+  m_AnchoredPosition: {x: 357, y: -287.5}
+  m_SizeDelta: {x: -398, y: -615}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814001192
 MonoBehaviour:
@@ -3611,7 +3684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3794,7 +3867,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560.6, y: 373}
+  m_AnchoredPosition: {x: 560.6, y: 317}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826152304
@@ -4366,7 +4439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 608.02, y: 125.6}
+  m_AnchoredPosition: {x: 600, y: 120}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098276256
@@ -4415,7 +4488,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1435484997}
         m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: CloseGun
+        m_MethodName: CloseGunFacts
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

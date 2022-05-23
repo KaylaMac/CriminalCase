@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FingerPrintExamination.unity
     guid: 9d367b7a4123d5449b39b02ed1d46b79
+  - enabled: 1
+    path: Assets/Scenes/GSRTest.unity
+    guid: 0151276697920044c8ecd83fde8fa2cd
   m_configObjects: {}

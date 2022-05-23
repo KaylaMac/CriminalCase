@@ -6,6 +6,7 @@ TagManager:
   tags:
   - showMap
   - GameMusic
+  - LoisSample
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: middle
+    uniqueID: 2086231477
+    locked: 0
+  - name: front
+    uniqueID: 1155027487
     locked: 0

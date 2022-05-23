@@ -1219,7 +1219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 567.702, y: 384}
+  m_AnchoredPosition: {x: 567.702, y: 326}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &400497409
@@ -1352,7 +1352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 567.36206, y: 384}
+  m_AnchoredPosition: {x: 567.36206, y: 326}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &421002596
@@ -1792,7 +1792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Insufficient story
+  m_Text: 'Choose one:'
 --- !u!222 &503374073
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 708390643}
   m_HandleRect: {fileID: 708390642}
   m_Direction: 2
-  m_Value: 0.9999998
+  m_Value: 1
   m_Size: 0.48927143
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1965,7 +1965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 445, y: 191}
+  m_AnchoredPosition: {x: 388, y: 130}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &532943827
@@ -2106,7 +2106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Shoe size matches '
+  m_Text: 'Choose one:'
 --- !u!222 &539677477
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3297,7 +3297,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 974689691}
   m_HandleRect: {fileID: 974689690}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3539,7 +3539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511, y: 389}
+  m_AnchoredPosition: {x: -435, y: 328}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831249122
@@ -3830,7 +3830,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 581253201}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3865843
+  m_Size: 0.38658428
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4773,6 +4773,8 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: 'Choose one:'
+      m_Image: {fileID: 0}
     - m_Text: 'Shoe size matches '
       m_Image: {fileID: 0}
     - m_Text: Prior offenses
@@ -5029,7 +5031,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1243787409}
   m_HandleRect: {fileID: 1243787408}
   m_Direction: 2
-  m_Value: 0.9999998
+  m_Value: 1
   m_Size: 0.48927143
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5184,7 +5186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 407, y: 389.24}
+  m_AnchoredPosition: {x: 368, y: 328.24}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1126042187
@@ -6493,6 +6495,8 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: 'Choose one:'
+      m_Image: {fileID: 0}
     - m_Text: Insufficient story
       m_Image: {fileID: 0}
     - m_Text: Fled the scene
@@ -6658,7 +6662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 191}
+  m_AnchoredPosition: {x: -9, y: 130}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546360377
@@ -7166,6 +7170,8 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: 'Choose one:'
+      m_Image: {fileID: 0}
     - m_Text: Insufficient story
       m_Image: {fileID: 0}
     - m_Text: Yes, hair was found
@@ -8109,7 +8115,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Insufficient story
+  m_Text: 'Choose one:'
 --- !u!222 &1804314484
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8376,7 +8382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -520, y: 190.76}
+  m_AnchoredPosition: {x: -414, y: 132}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915157938
@@ -8558,7 +8564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: 389.24}
+  m_AnchoredPosition: {x: -23, y: 328.24}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938893461

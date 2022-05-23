@@ -56,6 +56,14 @@ public class ButtonFunctions : MonoBehaviour
 		SceneManager.LoadScene("Lab");
 	}
 
+	public void GSR(){
+		SceneManager.LoadScene("GSRTest");
+	}
+
+	public void PrintsExamine(){
+		SceneManager.LoadScene("FingerPrintExamination");
+	}
+
 	public void Close(){
 		PersistentData.Instance.SetInstructions();
 	}
@@ -70,18 +78,17 @@ public class ButtonFunctions : MonoBehaviour
 		hairFacts.SetActive(false);
 	}
 
+	public void CloseGunFacts(){ 
+		GameObject GSRFact = GameObject.Find("GSR");
+		GSRFact.SetActive(false);
+	}
+
+	public void CloseResults(){ 
+		GameObject ResultsPanel= GameObject.Find("TestResults");
+		ResultsPanel.SetActive(false);
+	}
+
 	public void OpenGunPanel(){
 		gunPanel.SetActive(true); 
-	}
-	
-	
-	public void CloseGun(){ //FactsAboutIsoder
-		GameObject FactsAboutIsoder = GameObject.Find("FactsAboutIsoder");
-		FactsAboutIsoder.SetActive(false);
-	}
-	
-
-	public void PrintsExamine(){
-		SceneManager.LoadScene("FingerPrintExamination");
 	}
 }
