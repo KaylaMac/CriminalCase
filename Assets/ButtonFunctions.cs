@@ -83,6 +83,11 @@ public class ButtonFunctions : MonoBehaviour
 		GSRFact.SetActive(false);
 	}
 
+	public void CloseKnifeFacts(){
+		GameObject FactsAboutIsoder = GameObject.Find("FactsAboutIsoder");
+		FactsAboutIsoder.SetActive(false);
+	}
+
 	public void CloseResults(){ 
 		GameObject ResultsPanel= GameObject.Find("TestResults");
 		ResultsPanel.SetActive(false);
