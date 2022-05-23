@@ -98,6 +98,11 @@ public class ButtonFunctions : MonoBehaviour
 		GhostSniperFact.SetActive(false);
 	}
 
+	public void CloseBShellFact(){
+		GameObject FiringBulletUpFact = GameObject.Find("FiringBulletUpFact");
+		FiringBulletUpFact.SetActive(false);
+	}
+
 	public void CloseResults(){ 
 		GameObject ResultsPanel= GameObject.Find("TestResults");
 		ResultsPanel.SetActive(false);
