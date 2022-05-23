@@ -108,6 +108,11 @@ public class ButtonFunctions : MonoBehaviour
 		ZodiacKillerFact.SetActive(false);
 	}
 
+	public void CloseBobHairItem(){
+		GameObject DBCooperFact = GameObject.Find("DBCooperFact");
+		DBCooperFact.SetActive(false);
+	}
+
 	public void CloseResults(){ 
 		GameObject ResultsPanel= GameObject.Find("TestResults");
 		ResultsPanel.SetActive(false);
