@@ -103,6 +103,11 @@ public class ButtonFunctions : MonoBehaviour
 		FiringBulletUpFact.SetActive(false);
 	}
 
+	public void CloseBCarvings1(){
+		GameObject ZodiacKillerFact = GameObject.Find("ZodiacKillerFact");
+		ZodiacKillerFact.SetActive(false);
+	}
+
 	public void CloseResults(){ 
 		GameObject ResultsPanel= GameObject.Find("TestResults");
 		ResultsPanel.SetActive(false);
