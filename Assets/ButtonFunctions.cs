@@ -84,8 +84,13 @@ public class ButtonFunctions : MonoBehaviour
 	}
 
 	public void CloseKnifeFacts(){
-		GameObject FactsAboutIsoder = GameObject.Find("FactsAboutIsoder");
-		FactsAboutIsoder.SetActive(false);
+		GameObject FactsAboutIsider = GameObject.Find("FactsAboutIsider");
+		FactsAboutIsider.SetActive(false);
+	}
+
+	public void CloseAmmopackFacts(){
+		GameObject AltasVampireFact = GameObject.Find("AltasVampireFact");
+		AltasVampireFact.SetActive(false);
 	}
 
 	public void CloseResults(){ 

@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Knife : MonoBehaviour
 {
-    GameObject FactsAboutIsoder;
+    GameObject FactsAboutIsider;
 	bool isClicked;
     // Start is called before the first frame update
     void Start()
     {
         isClicked = PersistentData.Instance.GetKnife();
 	this.gameObject.SetActive(isClicked);
-    FactsAboutIsoder = GameObject.Find("FactsAboutIsoder");
-	FactsAboutIsoder.SetActive(false);
+    FactsAboutIsider = GameObject.Find("FactsAboutIsider");
+	FactsAboutIsider.SetActive(false);
     }
 
     private void OnMouseDown(){
 	PersistentData.Instance.SetKnifeShown();
 	PersistentData.Instance.SetLabKnife();
-    FactsAboutIsoder.SetActive(true);
+    FactsAboutIsider.SetActive(true);
 	this.gameObject.SetActive(false);
     }
 }
