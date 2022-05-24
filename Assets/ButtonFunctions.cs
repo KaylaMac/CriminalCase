@@ -115,6 +115,11 @@ public class ButtonFunctions : MonoBehaviour
 		DBCooperFact.SetActive(false);
 	}
 
+	public void CloseSecondKnifeFact(){
+		GameObject RashawnBrazellFact = GameObject.Find("RashawnBrazellFact");
+		RashawnBrazellFact.SetActive(false);
+	}
+
 	public void CloseResults(){ 
 		GameObject ResultsPanel= GameObject.Find("TestResults");
 		ResultsPanel.SetActive(false);
