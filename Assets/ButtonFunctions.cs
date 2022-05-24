@@ -8,7 +8,7 @@ public class ButtonFunctions : MonoBehaviour
 {
 
 
-	GameObject gunPanel, scratchPanel;
+	GameObject gunPanel, scratchPanel, barrel;
 	[SerializeField] InputField inputName;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,8 @@ public class ButtonFunctions : MonoBehaviour
 	gunPanel.SetActive(false);
 	scratchPanel = GameObject.Find("ScratchPanel");
 	scratchPanel.SetActive(false);
+	barrel = GameObject.Find("Barrel");
+	barrel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -115,11 +117,6 @@ public class ButtonFunctions : MonoBehaviour
 		DBCooperFact.SetActive(false);
 	}
 
-	public void CloseSecondKnifeFact(){
-		GameObject RashawnBrazellFact = GameObject.Find("RashawnBrazellFact");
-		RashawnBrazellFact.SetActive(false);
-	}
-
 	public void CloseResults(){ 
 		GameObject ResultsPanel= GameObject.Find("TestResults");
 		ResultsPanel.SetActive(false);
@@ -127,6 +124,10 @@ public class ButtonFunctions : MonoBehaviour
 
 	public void CloseGunPanel(){
 		gunPanel.SetActive(false);
+	}
+
+	public void CloseBarrel(){
+		barrel.SetActive(false);
 	}
 	
 	public void CloseScratchPanel(){
@@ -139,6 +140,14 @@ public class ButtonFunctions : MonoBehaviour
 
 	public void OpenScratchPanel(){
 		scratchPanel.SetActive(true); 
+	}
+
+	public void OpenBarrel(){
+		barrel.SetActive(true); 
+	}
+
+	public void OpenBarrelText(){
+		barrel.SetActive(true);
 	}
 	
 }
