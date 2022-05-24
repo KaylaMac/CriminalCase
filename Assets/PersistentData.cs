@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PersistentData : MonoBehaviour
 {
-    	int playerScore;
 	string playerName;
 
 	bool gunShown;
@@ -27,6 +26,8 @@ public class PersistentData : MonoBehaviour
 	bool isFiredFound;
 
 	bool instructionsPanel;
+
+	float timer;
 	
 	public static PersistentData Instance;
 
@@ -34,7 +35,7 @@ public class PersistentData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerScore = 0;
+        timer = 0;
 	playerName = "";
 	gunShown = true;
 	isGunInLab = false;
@@ -67,55 +68,60 @@ public class PersistentData : MonoBehaviour
         } 
     }
 
-	public void SetScore(int s){playerScore = s;}
-	public int GetScore(){return playerScore;}
+	void Update()
+    {
+		timer+= Time.deltaTime;
+	}
+
+	public float GetTimer(){return timer;}
+	public void ResetTimer(){timer = 0;}
 
 	public void SetName(string s){playerName = s;}
 	public string GetName(){return playerName;}
 
-	public void SetGunShown(){gunShown = false;}
+	public void SetGunShown(bool boolean){gunShown = boolean;}
 	public bool GetGun(){return gunShown;}
-	public void SetLabGun(){isGunInLab = true;}
+	public void SetLabGun(bool boolean){isGunInLab = boolean;}
 	public bool GetLabGun(){return isGunInLab;}
 	
-	public void SetBulletShown(){bulletShown = false;}
+	public void SetBulletShown(bool boolean){bulletShown = boolean;}
 	public bool GetBullet(){return bulletShown;}
-	public void SetLabBullet(){isBulletInLab = true;}
+	public void SetLabBullet(bool boolean){isBulletInLab = boolean;}
 	public bool GetLabBullet(){return isBulletInLab;}
 
-	public void SetBullet2Shown(){bullet2Shown = false;}
+	public void SetBullet2Shown(bool boolean){bullet2Shown = boolean;}
 	public bool GetBullet2(){return bullet2Shown;}
-	public void SetLabBullet2(){isBullet2InLab = true;}
+	public void SetLabBullet2(bool boolean){isBullet2InLab = boolean;}
 	public bool GetLabBullet2(){return isBullet2InLab;}
 
-	public void SetBobHairShown(){bobHairShown = false;}
+	public void SetBobHairShown(bool boolean){bobHairShown = boolean;}
 	public bool GetBob(){return bobHairShown;}
-	public void SetLabCurly(){isCurlyInLab = true;}
+	public void SetLabCurly(bool boolean){isCurlyInLab = boolean;}
 	public bool GetLabCurly(){return isCurlyInLab;}
 
-	public void SetLoisHairShown(){loisHairShown = false;}
+	public void SetLoisHairShown(bool boolean){loisHairShown = boolean;}
 	public bool GetLois(){return loisHairShown;}
-	public void SetLabRed(){isRedInLab = true;}
+	public void SetLabRed(bool boolean){isRedInLab = boolean;}
 	public bool GetLabRed(){return isRedInLab;}
 
-	public void SetKnifeShown(){knifeShown = false;}
+	public void SetKnifeShown(bool boolean){knifeShown = boolean;}
 	public bool GetKnife(){return knifeShown;}
-	public void SetLabKnife(){isKnifeInLab = true;}
+	public void SetLabKnife(bool boolean){isKnifeInLab = boolean;}
 	public bool GetLabKnife(){return isKnifeInLab;}
 
-	public void SetAmmoShown(){ammoShown = false;}
+	public void SetAmmoShown(bool boolean){ammoShown = boolean;}
 	public bool GetAmmo(){return ammoShown;}
-	public void SetLabAmmo(){isAmmoInLab = true;}
+	public void SetLabAmmo(bool boolean){isAmmoInLab = boolean;}
 	public bool GetLabAmmo(){return isAmmoInLab;}
 
-	public void SetShellsShown(){bulletShellsShown = false;}
+	public void SetShellsShown(bool boolean){bulletShellsShown = boolean;}
 	public bool GetShells(){return bulletShellsShown;}
-	public void SetLabShells(){areShellsInLab = true;}
+	public void SetLabShells(bool boolean){areShellsInLab = boolean;}
 	public bool GetLabShells(){return areShellsInLab;}
 
-	public void SetFiredShown(){firedShown = false;}
+	public void SetFiredShown(bool boolean){firedShown = boolean;}
 	public bool GetFired(){return firedShown;}
-	public void SetFiredFound(){isFiredFound = true;}
+	public void SetFiredFound(bool boolean){isFiredFound = boolean;}
 	public bool GetFiredFound(){return isFiredFound;}
 
 	public void SetInstructions(){instructionsPanel = !instructionsPanel;}

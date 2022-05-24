@@ -16,8 +16,8 @@ public class AmmoPack : MonoBehaviour
   }
 
     private void OnMouseDown(){
-		PersistentData.Instance.SetAmmoShown();
-		PersistentData.Instance.SetLabAmmo(); 
+		PersistentData.Instance.SetAmmoShown(false);
+		PersistentData.Instance.SetLabAmmo(true); 
 		this.gameObject.SetActive(false);
     AltasVampireFact.SetActive(true);
     }

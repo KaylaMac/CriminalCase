@@ -7,18 +7,14 @@ using UnityEngine.UI;
 public class ButtonFunctions : MonoBehaviour
 {
 
-
-	GameObject gunPanel, scratchPanel, barrel;
+	GameObject gunPanel;
 	[SerializeField] InputField inputName;
     // Start is called before the first frame update
     void Start()
     {
-    gunPanel = GameObject.Find("GunPanel");
+    	gunPanel = GameObject.Find("GunPanel");
 	gunPanel.SetActive(false);
-	scratchPanel = GameObject.Find("ScratchPanel");
-	scratchPanel.SetActive(false);
-	barrel = GameObject.Find("Barrel");
-	barrel.SetActive(false);
+	
     }
 
     // Update is called once per frame
@@ -27,11 +23,34 @@ public class ButtonFunctions : MonoBehaviour
         
     }
 
+	public void Main(){
+		PersistentData.Instance.SetGunShown(true);
+		PersistentData.Instance.SetLabGun(false);
+		PersistentData.Instance.SetBulletShown(true);
+		PersistentData.Instance.SetLabBullet(false);
+		PersistentData.Instance.SetBullet2Shown(true);
+		PersistentData.Instance.SetLabBullet2(false);
+		PersistentData.Instance.SetBobHairShown(true);
+		PersistentData.Instance.SetLabCurly(false);
+		PersistentData.Instance.SetLoisHairShown(true);
+		PersistentData.Instance.SetLabRed(false);
+		PersistentData.Instance.SetKnifeShown(true);
+		PersistentData.Instance.SetLabKnife(false);
+		PersistentData.Instance.SetAmmoShown(true);
+		PersistentData.Instance.SetLabAmmo(false);
+		PersistentData.Instance.SetShellsShown(true);
+		PersistentData.Instance.SetLabShells(false);
+		PersistentData.Instance.SetFiredShown(true);
+		PersistentData.Instance.SetFiredFound(false);
+		SceneManager.LoadScene("MainMenu");
+	}
+
 	public void Briefing(){
 		if(inputName.text != ""){
 			string s = inputName.text;
 			PersistentData.Instance.SetName(s);
 			PersistentData.Instance.SetInstructions();
+			PersistentData.Instance.ResetTimer();
 			SceneManager.LoadScene("Briefing");
 		}
 	} 
@@ -126,28 +145,9 @@ public class ButtonFunctions : MonoBehaviour
 		gunPanel.SetActive(false);
 	}
 
-	public void CloseBarrel(){
-		barrel.SetActive(false);
-	}
-	
-	public void CloseScratchPanel(){
-		scratchPanel.SetActive(false);
-	}
 
 	public void OpenGunPanel(){
 		gunPanel.SetActive(true); 
-	}
-
-	public void OpenScratchPanel(){
-		scratchPanel.SetActive(true); 
-	}
-
-	public void OpenBarrel(){
-		barrel.SetActive(true); 
-	}
-
-	public void OpenBarrelText(){
-		barrel.SetActive(true);
 	}
 	
 }

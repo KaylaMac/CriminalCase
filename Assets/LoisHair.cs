@@ -17,7 +17,7 @@ public class LoisHair : MonoBehaviour
     }
 
     private void OnMouseDown(){
-	PersistentData.Instance.SetLoisHairShown(); 	PersistentData.Instance.SetLabRed();
+	PersistentData.Instance.SetLoisHairShown(false); 	PersistentData.Instance.SetLabRed(true);
 	hairFacts.SetActive(true);
 	this.gameObject.SetActive(false);
     }

@@ -16,8 +16,8 @@ public class BulletTwo : MonoBehaviour
     }
 
     private void OnMouseDown(){
-	PersistentData.Instance.SetBullet2Shown();
-	PersistentData.Instance.SetLabBullet2();
+	PersistentData.Instance.SetBullet2Shown(false);
+	PersistentData.Instance.SetLabBullet2(true);
     GhostSniperFact.SetActive(true); //GhostSniperFact
 	this.gameObject.SetActive(false);
     }

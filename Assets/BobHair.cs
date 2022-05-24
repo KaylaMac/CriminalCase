@@ -16,8 +16,8 @@ public class BobHair : MonoBehaviour
     }
 
     private void OnMouseDown(){
-		PersistentData.Instance.SetBobHairShown();
-		PersistentData.Instance.SetLabCurly();
+		PersistentData.Instance.SetBobHairShown(false);
+		PersistentData.Instance.SetLabCurly(true);
         DBCooperFact.SetActive(true);
 		this.gameObject.SetActive(false);
 	}

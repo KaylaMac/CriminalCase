@@ -14,14 +14,15 @@ public class Bullet : MonoBehaviour{
 	bulletFacts = GameObject.Find("BulletFacts");
 	bulletFacts.SetActive(false);
 	bulletTwo = GameObject.Find("bullet1");
+	bulletTwo.SetActive(isClicked);
     }
     
     void Update(){      
     }
 
 	private void OnMouseDown(){
-		PersistentData.Instance.SetBulletShown();
-		PersistentData.Instance.SetLabBullet();
+		PersistentData.Instance.SetBulletShown(false);
+		PersistentData.Instance.SetLabBullet(true);
 		this.gameObject.SetActive(false);
 		bulletTwo.SetActive(false);
 		bulletFacts.SetActive(true);

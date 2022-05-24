@@ -16,8 +16,8 @@ public class BulletShells : MonoBehaviour
     }
 
     private void OnMouseDown(){
-	PersistentData.Instance.SetShellsShown();
-	PersistentData.Instance.SetLabShells();
+	PersistentData.Instance.SetShellsShown(false);
+	PersistentData.Instance.SetLabShells(true);
     FiringBulletUpFact.SetActive(true); //FiringBulletUpFact
 	this.gameObject.SetActive(false);
     }

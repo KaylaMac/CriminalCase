@@ -16,8 +16,8 @@ public class Gun : MonoBehaviour
     }
 
 	private void OnMouseDown(){
-		PersistentData.Instance.SetGunShown();
-		PersistentData.Instance.SetLabGun();
+		PersistentData.Instance.SetGunShown(false);
+		PersistentData.Instance.SetLabGun(true);
 		GSRFacts.SetActive(true);
 		this.gameObject.SetActive(false);
 	}	

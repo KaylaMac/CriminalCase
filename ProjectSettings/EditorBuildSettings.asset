@@ -7,32 +7,35 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: dd2b88865e9763e4d9955e3602925e14
+    guid: cb42aaf3dda8a334daede8d1ad924aa8
   - enabled: 1
     path: Assets/Scenes/Briefing.unity
-    guid: 8a6790a529642f540872b42a6c0ccfc9
+    guid: 7cf0a14f9c365f440bd1b8529c2e7dd9
   - enabled: 1
     path: Assets/Scenes/Living.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/LoisRoom.unity
-    guid: 3044d60501ed6c2408b29a1f9bb281cd
-  - enabled: 1
-    path: Assets/Scenes/BobRoom.unity
-    guid: 8ee6b8e89fd14c047acdecd78e5a4e6f
+    guid: 6dbd7b5443572da4ab1165a61030e637
   - enabled: 1
     path: Assets/Scenes/RileyRoom.unity
-    guid: 9459990ae32793d4cb0748bc0bafb292
+    guid: 9ea82fcf42cc3134ea265b3f08248e65
+  - enabled: 1
+    path: Assets/Scenes/LoisRoom.unity
+    guid: d0d5e0c4155dfab4394e0d9b60108847
+  - enabled: 1
+    path: Assets/Scenes/BobRoom.unity
+    guid: 7b73a885029d06a4ab5e80805a23ff6c
   - enabled: 1
     path: Assets/Scenes/SuspectLineup.unity
-    guid: 1557085163eb9c244b2f1983119f40f0
+    guid: 95b0c0a2f6e66e24e86233ebf2ed40d8
   - enabled: 1
     path: Assets/Scenes/Lab.unity
-    guid: 02e6f1952d7659e48a406bc672e00b8b
+    guid: e150260ed1814ab48ae99669c8658e8f
   - enabled: 1
     path: Assets/Scenes/FingerPrintExamination.unity
-    guid: 9d367b7a4123d5449b39b02ed1d46b79
+    guid: 75ca2b3a83792fd44b21dff1e342d5ba
   - enabled: 1
     path: Assets/Scenes/GSRTest.unity
-    guid: 0151276697920044c8ecd83fde8fa2cd
+    guid: b1e2fe622cbe3174bb425fec69d9a10f
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: c40ebeec60c6d454c8325c869c2b8375
   m_configObjects: {}

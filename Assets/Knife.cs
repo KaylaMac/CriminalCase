@@ -16,8 +16,8 @@ public class Knife : MonoBehaviour
     }
 
     private void OnMouseDown(){
-	PersistentData.Instance.SetKnifeShown();
-	PersistentData.Instance.SetLabKnife();
+	PersistentData.Instance.SetKnifeShown(false);
+	PersistentData.Instance.SetLabKnife(true);
     FactsAboutIsider.SetActive(true);
 	this.gameObject.SetActive(false);
     }

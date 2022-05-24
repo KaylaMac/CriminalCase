@@ -24,6 +24,6 @@ public class drop : MonoBehaviour
 	public void Check(){
 		value = dropd.value;
 		if(value == 3)
-			SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene("FinalScene");
 	}
 }

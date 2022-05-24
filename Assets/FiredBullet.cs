@@ -16,8 +16,8 @@ public class FiredBullet : MonoBehaviour
     }
 
    private void OnMouseDown(){
-	PersistentData.Instance.SetFiredShown();
-	PersistentData.Instance.SetFiredFound();
+	PersistentData.Instance.SetFiredShown(false);
+	PersistentData.Instance.SetFiredFound(true);
     ZodiacKillerFact.SetActive(true); 
 	this.gameObject.SetActive(false);
    }
